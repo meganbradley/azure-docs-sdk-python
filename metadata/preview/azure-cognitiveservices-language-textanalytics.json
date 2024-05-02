@@ -1,7 +1,7 @@
 {
   "Name": "azure-cognitiveservices-language-textanalytics",
   "Version": "0.2.2",
-  "DevVersion": null,
+  "DevVersion": "0.2.2",
   "DirectoryPath": "sdk/cognitiveservices/azure-cognitiveservices-language-textanalytics",
   "ServiceDirectory": "cognitiveservices",
   "ReadMePath": "sdk/cognitiveservices/azure-cognitiveservices-language-textanalytics/README.md",
