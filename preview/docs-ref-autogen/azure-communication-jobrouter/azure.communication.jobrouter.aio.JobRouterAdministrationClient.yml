@@ -257,10 +257,10 @@ methods:
     classification_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\":\
     \ [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
     : \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\classification_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\classification_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
     \n   async with router_admin_client:\n       classification_policy_iterator =\
     \ router_admin_client.list_classification_policies(results_per_page=10)\n\n  \
@@ -291,10 +291,10 @@ methods:
     distribution_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
     : \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\distribution_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\distribution_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
     \n   async with router_admin_client:\n       distribution_policy_iterator = router_admin_client.list_distribution_policies(results_per_page=10)\n\
     \n       async for policy_page in distribution_policy_iterator.by_page():\n  \
@@ -324,10 +324,10 @@ methods:
     exception_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
     \ \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\exception_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\exception_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
     \n   async with router_admin_client:\n       exception_policy_iterator = router_admin_client.list_exception_policies(results_per_page=10)\n\
     \n       async for policy_page in exception_policy_iterator.by_page():\n     \
@@ -357,11 +357,11 @@ methods:
     job_queue_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\\
     hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\job_queue_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio import\
-    \ JobRouterAdministrationClient\n\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\job_queue_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \ import JobRouterAdministrationClient\n\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
     \n   async with router_admin_client:\n       job_queue_iterator = router_admin_client.list_queues(results_per_page=10)\n\
     \n       async for queue_page in job_queue_iterator.by_page():\n           job_queues_in_page\
     \ = [i async for i in queue_page]\n           print(f\"Retrieved {len(job_queues_in_page)}\
@@ -480,10 +480,10 @@ methods:
     classification_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\":\
     \ [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
     : \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\classification_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\classification_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n   from azure.communication.jobrouter.models\
     \ import (\n       ClassificationPolicy,\n       ExpressionRouterRule,\n   )\n\
     \n   # set `connection_string` to an existing ACS endpoint\n   router_admin_client\
@@ -549,10 +549,10 @@ methods:
     distribution_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
     : \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\distribution_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\distribution_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n   from azure.communication.jobrouter.models\
     \ import (\n       DistributionPolicy,\n       RoundRobinMode,\n   )\n\n   # set\
     \ `connection_string` to an existing ACS endpoint\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
@@ -612,10 +612,10 @@ methods:
     exception_policy_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
     \ \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\exception_policy_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\exception_policy_crud_ops_async.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
     \ import JobRouterAdministrationClient\n   from azure.communication.jobrouter.models\
     \ import (\n       WaitTimeExceptionTrigger,\n       ReclassifyExceptionAction,\n\
     \       ExceptionPolicy,\n       ExceptionRule,\n       QueueLengthExceptionTrigger,\n\
@@ -712,11 +712,11 @@ methods:
     job_queue_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\\
     hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\job_queue_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio import\
-    \ JobRouterAdministrationClient\n   from azure.communication.jobrouter.models\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240501001\\\
+    \\samples\\\\job_queue_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \ import JobRouterAdministrationClient\n   from azure.communication.jobrouter.models\
     \ import (\n       RouterQueue,\n   )\n\n   # set `connection_string` to an existing\
     \ ACS endpoint\n   router_admin_client = JobRouterAdministrationClient.from_connection_string(conn_str=connection_string)\n\
     \   print(\"JobRouterAdministrationClient created successfully!\")\n\n   async\
