@@ -66,6 +66,13 @@ constructor:
 
       should be the storage account key.'
     defaultValue: None
+    types:
+    - <xref:azure.core.credentials.AzureNamedKeyCredential>
+    - <xref:azure.core.credentials.AzureSasCredential>
+    - <xref:azure.core.credentials_async.AsyncTokenCredential>
+    - <xref:str>
+    - <xref:dict>[<xref:str>, <xref:str>]
+    - <xref:None>
   keywordOnlyParameters:
   - name: token_intent
     description: "Required when using *TokenCredential* for authentication and ignored\
@@ -431,7 +438,7 @@ methods:
   - "Create a file.<!--[!code-python[Main](les\\file_samples_client_async.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\
-    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0b1\\\
+    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0a20240501001\\\
     \\samples\\\\file_samples_client_async.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   # Create and allocate bytes for the\
@@ -474,7 +481,7 @@ methods:
   - "Delete a file.<!--[!code-python[Main](les\\file_samples_client_async.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\
-    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0b1\\\
+    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0a20240501001\\\
     \\samples\\\\file_samples_client_async.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   await my_file.delete_file()\n\n   ````\n"
@@ -569,7 +576,7 @@ methods:
   - "Download a file.<!--[!code-python[Main](les\\file_samples_client_async.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\
-    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0b1\\\
+    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0a20240501001\\\
     \\samples\\\\file_samples_client_async.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   with open(DEST_FILE, \"wb\") as data:\n\
@@ -650,8 +657,12 @@ methods:
       should be the storage account key.'
     defaultValue: None
     types:
-    - <xref:typing.Optional>[<xref:typing.Union>[<xref:str>, <xref:dict>[<xref:str>,
-      <xref:str>], <xref:AzureNamedKeyCredential>, <xref:AzureSasCredential>, <xref:"TokenCredential">]]
+    - <xref:azure.core.credentials.AzureNamedKeyCredential>
+    - <xref:azure.core.credentials.AzureSasCredential>
+    - <xref:azure.core.credentials.TokenCredential>
+    - <xref:str>
+    - <xref:dict>[<xref:str>, <xref:str>]
+    - <xref:None>
   keywordOnlyParameters:
   - name: audience
     description: 'The audience to use when requesting tokens for Azure Active Directory
@@ -671,11 +682,11 @@ methods:
     file_samples_hello_world.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\\
     hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0b1\\\\samples\\\
-    \\file_samples_hello_world.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from azure.storage.fileshare import ShareFileClient\n\
-    \   file = ShareFileClient.from_connection_string(\n       self.connection_string,\n\
+    \\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0a20240501001\\\
+    \\samples\\\\file_samples_hello_world.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.storage.fileshare import\
+    \ ShareFileClient\n   file = ShareFileClient.from_connection_string(\n       self.connection_string,\n\
     \       share_name=\"helloworld2\",\n       file_path=\"myfile\")\n\n   ````\n"
 - uid: azure.storage.fileshare.aio.ShareFileClient.from_file_url
   name: from_file_url
@@ -721,8 +732,12 @@ methods:
       should be the storage account key.'
     defaultValue: None
     types:
-    - <xref:typing.Optional>[<xref:typing.Union>[<xref:str>, <xref:dict>[<xref:str>,
-      <xref:str>], <xref:AzureNamedKeyCredential>, <xref:AzureSasCredential>, <xref:"TokenCredential">]]
+    - <xref:azure.core.credentials.AzureNamedKeyCredential>
+    - <xref:azure.core.credentials.AzureSasCredential>
+    - <xref:azure.core.credentials.TokenCredential>
+    - <xref:str>
+    - <xref:dict>[<xref:str>, <xref:str>]
+    - <xref:None>
   keywordOnlyParameters:
   - name: audience
     description: 'The audience to use when requesting tokens for Azure Active Directory
@@ -1310,7 +1325,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    205\\\\azure-storage-file-share-12.16.0b1\\\\samples\\\\file_samples_client_async.py\"\
+    205\\\\azure-storage-file-share-12.16.0a20240501001\\\\samples\\\\file_samples_client_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   await destination_file.start_copy_from_url(source_url=source_url)\n\n   ````\n"
@@ -1472,7 +1487,7 @@ methods:
   - "Upload a file.<!--[!code-python[Main](les\\file_samples_client_async.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\\Python\\\
-    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0b1\\\
+    \\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\205\\\\azure-storage-file-share-12.16.0a20240501001\\\
     \\samples\\\\file_samples_client_async.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   with open(SOURCE_FILE, \"rb\") as source:\n\
