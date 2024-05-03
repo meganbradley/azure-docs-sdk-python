@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-cognitiveservices-language-textanalytics, cognitiveservices
-ms.date: 05/01/2024
+ms.date: 05/03/2024
 ms.topic: reference
 ms.devlang: python
 ms.service: cognitiveservices
