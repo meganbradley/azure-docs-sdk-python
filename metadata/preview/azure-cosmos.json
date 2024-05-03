@@ -1,7 +1,7 @@
 {
   "Name": "azure-cosmos",
-  "Version": "4.6.1a20240502001",
-  "DevVersion": "4.6.1a20240502001",
+  "Version": "4.6.1a20240503002",
+  "DevVersion": "4.6.1a20240503002",
   "DirectoryPath": "sdk/cosmos/azure-cosmos",
   "ServiceDirectory": "cosmos",
   "ReadMePath": "sdk/cosmos/azure-cosmos/README.md",
