@@ -1403,6 +1403,7 @@
       - name: Resource Management - Recovery Services Backup
         href: ~/docs-ref-services/latest/mgmt-recoveryservicesbackup-readme.md
         children:
+        - azure-mgmt-recoveryservicesbackup
         - azure.mgmt.recoveryservicesbackup
       - name: Resource Management - Recovery Services Site Recovery
         href: ~/docs-ref-services/latest/mgmt-recoveryservicessiterecovery-readme.md

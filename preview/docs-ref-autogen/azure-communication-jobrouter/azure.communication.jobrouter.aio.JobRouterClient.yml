@@ -103,7 +103,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.communication.jobrouter.aio import JobRouterClient\n\n   router_client\
@@ -149,7 +149,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n       from azure.communication.jobrouter.models import (\n           RouterJob,\n\
@@ -193,7 +193,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.communication.jobrouter.aio import JobRouterClient\n   from azure.communication.jobrouter.models\
@@ -241,7 +241,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n       from azure.communication.jobrouter.models import (\n           RouterJob,\n\
@@ -506,18 +506,19 @@ methods:
     router_job_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\\
     hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\router_job_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from datetime import datetime\n   from azure.communication.jobrouter.aio\
-    \ import JobRouterClient\n\n   router_client = JobRouterClient.from_connection_string(conn_str=connection_string)\n\
-    \n   scheduled_before = datetime.utcnow()\n\n   async with router_client:\n  \
-    \     router_job_iterator = router_client.list_jobs(scheduled_before=scheduled_before,\
-    \ results_per_page=10)\n\n       async for job_page in router_job_iterator.by_page():\n\
-    \           jobs_in_page = [i async for i in job_page]\n           print(f\"Retrieved\
-    \ {len(jobs_in_page)} jobs in current page\")\n\n           for j in jobs_in_page:\n\
-    \               print(f\"Retrieved job with id: {j.id}\")\n\n       print(f\"\
-    Successfully completed fetching scheduled jobs\")\n\n   ````\n"
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\
+    \\samples\\\\router_job_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from datetime import datetime\n   from\
+    \ azure.communication.jobrouter.aio import JobRouterClient\n\n   router_client\
+    \ = JobRouterClient.from_connection_string(conn_str=connection_string)\n\n   scheduled_before\
+    \ = datetime.utcnow()\n\n   async with router_client:\n       router_job_iterator\
+    \ = router_client.list_jobs(scheduled_before=scheduled_before, results_per_page=10)\n\
+    \n       async for job_page in router_job_iterator.by_page():\n           jobs_in_page\
+    \ = [i async for i in job_page]\n           print(f\"Retrieved {len(jobs_in_page)}\
+    \ jobs in current page\")\n\n           for j in jobs_in_page:\n             \
+    \  print(f\"Retrieved job with id: {j.id}\")\n\n       print(f\"Successfully completed\
+    \ fetching scheduled jobs\")\n\n   ````\n"
 - uid: azure.communication.jobrouter.aio.JobRouterClient.list_workers
   name: list_workers
   summary: Retrieves existing workers.
@@ -566,11 +567,11 @@ methods:
     router_worker_crud_ops_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\\
     hostedtoolcache\\\\windows\\\\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\
-    \\py2docfx\\\\dist_temp\\\\26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\
-    \\router_worker_crud_ops_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
-    \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio import\
-    \ JobRouterClient\n\n   router_client = JobRouterClient.from_connection_string(conn_str=connection_string)\n\
+    \\py2docfx\\\\dist_temp\\\\24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\
+    \\samples\\\\router_worker_crud_ops_async.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.communication.jobrouter.aio\
+    \ import JobRouterClient\n\n   router_client = JobRouterClient.from_connection_string(conn_str=connection_string)\n\
     \n   async with router_client:\n       router_worker_iterator = router_client.list_workers(results_per_page=10)\n\
     \n       async for worker_page in router_worker_iterator.by_page():\n        \
     \   workers_in_page = [i async for i in worker_page]\n           print(f\"Retrieved\
@@ -598,7 +599,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.communication.jobrouter.aio import JobRouterClient\n\n   router_client\
@@ -784,7 +785,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_job_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_job_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.communication.jobrouter.aio import (\n       JobRouterClient,\n\
@@ -874,7 +875,7 @@ methods:
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"C:\\\\hostedtoolcache\\\\windows\\\
     \\Python\\\\3.11.9\\\\x64\\\\Lib\\\\site-packages\\\\py2docfx\\\\dist_temp\\\\\
-    26\\\\azure-communication-jobrouter-1.1.0b1\\\\samples\\\\router_worker_crud_ops_async.py\"\
+    24\\\\azure-communication-jobrouter-1.1.0a20240503001\\\\samples\\\\router_worker_crud_ops_async.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.communication.jobrouter.aio import JobRouterClient\n\n   router_client\
