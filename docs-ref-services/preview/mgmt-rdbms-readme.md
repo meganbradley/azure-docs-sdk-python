@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-rdbms, rdbms
-ms.date: 04/22/2024
+ms.date: 05/07/2024
 ms.topic: reference
 ms.devlang: python
 ms.service: rdbms
