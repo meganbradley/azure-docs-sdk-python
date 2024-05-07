@@ -19,7 +19,7 @@ summary: 'Base type for skills.
 
   EntityRecognitionSkillV3, SentimentSkillV3, ConditionalSkill, DocumentExtractionSkill,
 
-  ShaperSkill, ImageAnalysisSkill, OcrSkill
+  ShaperSkill, ImageAnalysisSkill, OcrSkill, VisionVectorizeSkill
 
 
   All required parameters must be populated in order to send to server.'
